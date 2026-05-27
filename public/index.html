@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API de Livros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>API de Livros</h1>
+
+    <form id="livroForm">
+
+      <input type="hidden" id="id">
+
+      <input type="text" id="titulo" placeholder="Título do livro" required>
+
+      <input type="text" id="autor" placeholder="Autor" required>
+
+      <input type="text" id="categoria" placeholder="Categoria" required>
+
+      <input type="number" id="paginas" placeholder="Número de páginas" required>
+
+      <button type="submit">Salvar Livro</button>
+
+    </form>
+
+    <input type="text" id="pesquisa" placeholder="Pesquisar livro...">
+
+    <div id="livrosContainer"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #121212;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 48px;
+}
+
+form {
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+input {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #2b2b2b;
+  color: white;
+  font-size: 15px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+form button {
+  grid-column: span 2;
+}
+
+#pesquisa {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+#livrosContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e1e1e;
+  padding: 22px;
+  border-radius: 16px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.card p {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.edit {
+  background: #2563eb;
+}
+
+.delete {
+  background: #dc2626;
+}
+
+@media (max-width: 700px) {
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  form button {
+    grid-column: span 1;
+  }
+}
